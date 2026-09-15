@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sequence - Dang Nhap" id="lTqOOkvGzi5vLohsg-n8">
+    <mxGraphModel dx="1030" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;labelBackgroundColor=none;" value="Khách hàng" vertex="1">
+          <mxGeometry height="60" width="30" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-2" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;labelBackgroundColor=none;fontColor=default;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="80" as="sourcePoint" />
+            <mxPoint x="45" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;fontStyle=1;labelBackgroundColor=none;" value="Màn hình UI" vertex="1">
+          <mxGeometry height="580" width="160" x="280" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-18" parent="Ep05sQbpfbErkg6kRVhW-3" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="430" width="10" x="75" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;collapsible=0;recursiveResize=0;outlineConnect=0;fontSize=12;fontStyle=1;labelBackgroundColor=none;" value="AuthServer" vertex="1">
+          <mxGeometry height="580" width="160" x="620" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-21" parent="Ep05sQbpfbErkg6kRVhW-4" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="430" width="10" x="75" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-22" parent="Ep05sQbpfbErkg6kRVhW-4" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};labelBackgroundColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="85" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-23" edge="1" parent="Ep05sQbpfbErkg6kRVhW-4" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;labelBackgroundColor=none;fontColor=default;" target="Ep05sQbpfbErkg6kRVhW-22" value="checkCredentials">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="160" />
+            </Array>
+            <mxPoint x="90" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-5" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;rounded=0;fontSize=11;labelBackgroundColor=none;fontColor=default;" value="1: nhapThongTin(username, password)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="120" as="sourcePoint" />
+            <mxPoint x="350" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-6" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;rounded=0;fontSize=11;labelBackgroundColor=none;fontColor=default;" value="2: verifyAccount()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="170" as="sourcePoint" />
+            <mxPoint x="690" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-8" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;width=40;height=20;verticalAlign=top;align=left;fontSize=12;fontStyle=1;labelBackgroundColor=none;" value="alt" vertex="1">
+          <mxGeometry height="230" width="800" x="20" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-9" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;labelBackgroundColor=none;" value="[Thông tin hợp lệ]" vertex="1">
+          <mxGeometry height="20" width="200" x="30" y="303" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-10" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;labelBackgroundColor=none;fontColor=default;" value="4: Token thành công">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="340" as="sourcePoint" />
+            <mxPoint x="370" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-11" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;labelBackgroundColor=none;fontColor=default;" value="5: Return - hiển thị Trang chủ">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="370" as="sourcePoint" />
+            <mxPoint x="45" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-12" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;labelBackgroundColor=none;fontColor=default;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="405" as="sourcePoint" />
+            <mxPoint x="820" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-13" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=11;labelBackgroundColor=none;" value="[Thông tin không hợp lệ]" vertex="1">
+          <mxGeometry height="20" width="220" x="30" y="413" as="geometry" />
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-14" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;labelBackgroundColor=none;fontColor=default;" value="6: Sai mật khẩu (lỗi)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="450" as="sourcePoint" />
+            <mxPoint x="370" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ep05sQbpfbErkg6kRVhW-15" edge="1" parent="1" style="html=1;endArrow=open;endFill=0;dashed=1;fontSize=11;labelBackgroundColor=none;fontColor=default;" value="7: Return - hiển thị cảnh báo lỗi">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="485" as="sourcePoint" />
+            <mxPoint x="45" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
